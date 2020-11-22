@@ -11,3 +11,4 @@ $router->get('/CourseAll','CourseContoller@onSelectAll');
 $router->post('/CourseDetails','CourseContoller@onSelectDetails');
 
 $router->get('/footerDetails','FooterController@onSelectAll');
+$router->get('/serviceDetails','ServiceController@onSelectAllService');
