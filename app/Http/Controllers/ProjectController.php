@@ -8,7 +8,7 @@ use App\ProjectModel;
 class ProjectController extends Controller
 {
     function onSelect3(){
-        $result =  ProjectModel::limiti(3)->get();
+        $result = ProjectModel::limit(3)->get();
         return $result;
     }
 

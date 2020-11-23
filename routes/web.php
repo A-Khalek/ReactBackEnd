@@ -16,3 +16,8 @@ $router->get('/serviceDetails','ServiceController@onSelectAllService');
 $router->get('/project3','ProjectController@onSelect3');
 $router->get('/projectSelectAll','ProjectController@onSelectAll');
 $router->post('/projectDetails','ProjectController@onSelectDetails');
+
+$router->get('/videoHome','HomeController@onVideotAll');
+$router->get('/totalProjectClient','HomeController@onSelectClientProject');
+$router->get('/tectDesc','HomeController@onSelectTechDesc');
+$router->get('/homeTitle','HomeController@onSelectHomeTitle');
