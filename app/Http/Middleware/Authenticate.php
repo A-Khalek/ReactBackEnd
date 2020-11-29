@@ -35,8 +35,8 @@ class Authenticate
      */
     public function handle($request, Closure $next, $guard = null)
     {
-       
         return $next($request)
-        ->header('Access-Control-Allow-Origin','*');
+        ->header('Access-Control-Allow-Origin','*')
+        ->header('Access-Control-Allow-Methods','*');
     }
 }
