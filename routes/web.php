@@ -5,7 +5,7 @@ $router->get('/ClientReview',['middleware'=>'auth','uses'=>'ClientReviewControll
 $router->post('/ContactSend',['middleware'=>'auth','uses'=>'ContactController@onContactSend']);
 $router->get('/CourseHome',['middleware'=>'auth','uses'=>'CourseContoller@onSelectFour']);
 $router->get('/CourseAll',['middleware'=>'auth','uses'=>'CourseContoller@onSelectAll']);
-$router->get('/CourseDetails/{CourseId}',['middleware'=>'auth','uses'=>'CourseContoller@onSelectDetails']);
+$router->get('/CourseDetails/{CourseID}',['middleware'=>'auth','uses'=>'CourseContoller@onSelectDetails']);
 $router->get('/footerDetails',['middleware'=>'auth','uses'=>'FooterController@onSelectAll']);
 $router->get('/serviceDetails',['middleware'=>'auth','uses'=>'ServiceController@onSelectAllService']);
 $router->get('/project3',['middleware'=>'auth','uses'=>'ProjectController@onSelect3']);
